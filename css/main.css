@@ -27,13 +27,17 @@
   padding: 0px 17px;
   border-right: 1px solid #9B9B9B;
 }
+.top .seach .seach-left select {
+  border: none;
+  outline: none;
+}
 .top .seach .seach-left .fas {
   padding-left: 5px;
 }
 .top .seach .seach-btn {
   width: 595px;
   height: 42px;
-  padding-left: 155px;
+  padding-left: 170px;
   color: #666666;
   line-height: 42px;
   border-radius: 5px;
@@ -53,6 +57,10 @@
 }
 .top .seach .seach-right :nth-child(2) {
   padding-left: 13px;
+}
+.top .seach .seach-right a {
+  color: #D6D6D6;
+  text-decoration: none;
 }
 .top .phone-contact {
   line-height: 20px;
