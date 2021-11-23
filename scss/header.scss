@@ -1,0 +1,118 @@
+.header{
+    position: relative;
+    padding-top: 29px;
+    background-image: url('../img/bg-haeder.png');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    height: 594px;
+    img{
+        width: 100%;
+    }
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 14px;
+    height: 42px;
+    .logo{
+        padding-left: 27px;
+    }
+    .seach{
+        .seach-left{
+            position: absolute;
+            line-height: 42px;
+            color: #444444;
+            padding: 0px 17px;
+            border-right: 1px solid #9B9B9B;
+            .fas{
+                padding-left: 5px;
+            }
+        }
+        .seach-btn{
+            width: 595px;
+            height: 42px;
+            padding-left: 155px;
+            color: #666666;
+            line-height: 42px;
+            border-radius: 5px;
+            outline: none;
+            border: 1px #9B9B9B solid;
+        }
+        .seach-right{
+            position: absolute;
+            line-height: 42px;
+            right: 235px;
+            height: 42px;
+            width: 125px;
+            background-color: #137C37;
+            padding-left: 12px;
+            color: #ffffff;
+            border-radius: 5px;
+            & :nth-child(2){
+                padding-left: 13px;
+            }
+        }
+    }
+    .phone-contact{
+        line-height: 20px;
+        padding-right: 20px;
+        & :nth-child(1){
+            font-size: 12px;
+            color: #137C37;
+        }
+        & :nth-child(2){
+            font-weight: bold;
+        }
+    }
+}
+.nav{
+    margin-top: 39px;
+    align-items: center;
+    background-color: #137C37;
+    padding-top: 17px;
+    border: 8px #D6D6D6 solid;
+    border-radius: 3px;
+    position: relative;
+    transition: all 0.3s ease-in;
+    li{
+        float: left;
+        list-style: none;
+    }
+    a{
+        color: #fff;
+        padding: 0rem 2rem;
+         &:hover{
+             color: #D6D6D6;
+         }
+    }
+    .active::after{
+        position: absolute;
+        content: "";
+        width: 93px;
+        height: 3px;
+        background-color: #ED1C24;
+        top: 54px;
+        left: 38px;
+        border-radius: 3px;
+    }
+    ul{
+        & :nth-child(1) a{
+            padding-left: 0px;
+        }
+    }
+}
+.sticky{
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    width: 100%;
+    left:0px;
+    top: 0px;
+    margin-top: 0px;
+    transition: all 0.5s ease;
+    
+}
+.slider{
+    padding-top: 25px;
+}
