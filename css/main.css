@@ -25,11 +25,12 @@
   line-height: 42px;
   color: #444444;
   padding: 0px 17px;
-  border-right: 1px solid #9B9B9B;
+  border-right: 1px solid #888282;
 }
 .top .seach .seach-left select {
   border: none;
   outline: none;
+  color: #444444;
 }
 .top .seach .seach-left .fas {
   padding-left: 5px;
@@ -59,7 +60,7 @@
   padding-left: 13px;
 }
 .top .seach .seach-right a {
-  color: #D6D6D6;
+  color: #ffffff;
   text-decoration: none;
 }
 .top .phone-contact {
@@ -124,13 +125,19 @@
   padding-top: 25px;
 }
 
+.title {
+  padding-top: 52px;
+  padding-bottom: 31px;
+}
+.title h3 {
+  font-weight: 900;
+  color: #3F3F3F;
+  font-size: 30px;
+}
+
 .content {
   padding-bottom: 52px;
   text-align: center;
-}
-.content .title {
-  padding-top: 50px;
-  padding-bottom: 31px;
 }
 .content .content-item {
   position: relative;
@@ -163,20 +170,19 @@
   font-size: 20px;
   padding: 10px 10px;
 }
-.content .more {
+.content .content-more {
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 3px;
   width: 179px;
   height: 44px;
   background-color: #329736;
   padding-top: 10px;
-  display: block;
 }
-.content .more a {
+.content .content-more a {
   color: #FFF;
   text-decoration: none;
 }
-.content .more a .fas {
+.content .content-more a .fas {
   padding-left: 30px;
 }
 
@@ -208,11 +214,171 @@
   content: "";
   bottom: -15px;
   left: -15px;
-  background-color: #329736;
+  background-color: #137C37;
   width: 134px;
   height: 134px;
   position: absolute;
   opacity: 50%;
+}
+.about .about-title {
+  font-size: 16px;
+}
+.about .about-title p {
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+.about .about-title :nth-child(1) {
+  line-height: 24px;
+}
+.about .about-title :nth-child(1) p {
+  font-weight: 500;
+}
+.about .about-title :nth-child(1) h5 {
+  color: #ED1C24;
+  font-size: 24px;
+  font-weight: bold;
+}
+.about .about-title :nth-child(3) .fas {
+  color: #137C37;
+  margin-right: 10px;
+}
+.about .about-title div {
+  margin-top: 20px;
+}
+.about .about-title .about-more {
+  padding-left: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 179px;
+  height: 44px;
+  background-color: #329736;
+  padding-top: 10px;
+}
+.about .about-title .about-more a {
+  color: #FFF;
+  text-decoration: none;
+}
+.about .about-title .about-more .fas {
+  padding-left: 40px;
+}
+
+.service {
+  text-align: center;
+}
+.service .service-item img {
+  width: 100%;
+}
+.service .service-item .service-desc {
+  text-align: center;
+}
+.service .service-item h4 {
+  padding-top: 41px;
+  padding-bottom: 24px;
+  font-size: 22px;
+  color: #3F3F3F;
+  font-weight: 800;
+}
+
+.project {
+  background-image: url("../img/bg-project.png");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  text-align: center;
+  height: auto;
+  padding-bottom: 32px;
+}
+.project .project-item img {
+  width: 100%;
+}
+.project .project-item p {
+  padding-top: 5px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  color: #3F3F3F;
+}
+.project .project-more {
+  text-align: center;
+  padding: 11px 35px;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 145px;
+  height: 40px;
+  background-color: #329736;
+  display: inline;
+}
+.project .project-more a {
+  margin-bottom: 20px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.news {
+  text-align: center;
+}
+.news img {
+  float: left;
+  padding: 22px;
+}
+.news span {
+  display: block;
+  padding-top: 36px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: start;
+}
+.news p {
+  padding-top: 20px;
+  font-size: 12px;
+  color: #999999;
+  text-align: start;
+}
+.news .news-more {
+  padding-bottom: 41px;
+}
+.news .news-more a {
+  color: #15851A;
+  text-decoration: none;
+}
+.news .news-more .fas {
+  padding-top: 19px;
+  padding-right: 10px;
+}
+
+.contact {
+  text-align: center;
+  position: relative;
+  background-image: url("../img/bg-contact.png");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  color: #ffffff;
+  height: 226px;
+  line-height: 22px;
+}
+.contact .contact-bgc {
+  left: 0px;
+  bottom: 0;
+  background-color: #0a910e;
+  top: 0;
+  right: 0;
+  position: absolute;
+  opacity: 0.8;
+}
+.contact .contact-bgc .contact-top {
+  padding-top: 46px;
+  line-height: 10px;
+}
+.contact .contact-bgc .contact-bottom .submit {
+  color: #ED1C24;
+  font-weight: bold;
+}
+.contact .contact-bgc .contact-bottom input {
+  border: none;
+  outline-style: none;
+  background-color: #EDF1FA;
+  padding-left: 10px;
+  color: #000;
+  height: 45px;
+  width: 241px;
 }
 
 /*# sourceMappingURL=main.css.map */
