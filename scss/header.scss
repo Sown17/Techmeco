@@ -92,7 +92,7 @@
         color: #fff;
         padding: 0rem 2rem;
          &:hover{
-             color: #D6D6D6;
+             color: #fff;
          }
     }
     .active::after{
@@ -101,15 +101,43 @@
         width: 93px;
         height: 3px;
         background-color: #ED1C24;
-        top: 54px;
-        left: 38px;
+        top: 48px;
+        left: 37px;
         border-radius: 3px;
+        max-width: 90px;
     }
     ul{
         & :nth-child(1) a{
             padding-left: 0px;
         }
     }
+    
+}
+  
+.nav-list {
+    display: inline-block;
+    text-align: center;
+    line-height: 1em;
+    vertical-align: middle;
+}
+  
+.nav-link {
+    color: #ED1C24;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+.nav-link:after {
+    border-bottom: 3px solid #ED1C24;
+    content: "";
+    display: block;
+    margin: 0.25em auto 0;
+    transition: width 250ms ease-in-out 0s;
+    width: 0;
+}
+.nav-link:hover:after {
+    border-radius: 3px;
+    transition: width 400ms ease-in-out 0s;
+    width: 100%;
 }
 .sticky{
     position: fixed;
@@ -120,6 +148,19 @@
     top: 0px;
     margin-top: 0px;
     transition: all 0.5s ease;
+    a{
+        margin-left: 23px;
+    }
+    .active::after{
+        position: absolute;
+        content: "";
+        width: 93px;
+        height: 3px;
+        background-color: #ED1C24;
+        left: 60px;
+        border-radius: 3px;
+        max-width: 94px;
+    }
     
 }
 .slider{
