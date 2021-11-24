@@ -138,6 +138,7 @@
 .content {
   padding-bottom: 52px;
   text-align: center;
+  margin-bottom: 49px;
 }
 .content .content-item {
   position: relative;
@@ -176,14 +177,19 @@
   width: 179px;
   height: 44px;
   background-color: #329736;
-  padding-top: 10px;
+  padding: 10px 0px;
+  padding-left: 20px;
+  display: inline;
 }
 .content .content-more a {
   color: #FFF;
   text-decoration: none;
 }
 .content .content-more a .fas {
-  padding-left: 30px;
+  margin-top: -11px;
+  margin-left: 20px;
+  padding: 12px 20px;
+  background-color: #137C37;
 }
 
 .about {
@@ -235,7 +241,7 @@
 }
 .about .about-title :nth-child(1) h5 {
   color: #ED1C24;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 .about .about-title :nth-child(3) .fas {
@@ -259,7 +265,10 @@
   text-decoration: none;
 }
 .about .about-title .about-more .fas {
-  padding-left: 40px;
+  margin-top: -11px;
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: #137C37;
 }
 
 .service {
@@ -315,6 +324,9 @@
 .news {
   text-align: center;
 }
+.news .news-item {
+  background-color: #F8F8F8;
+}
 .news img {
   float: left;
   padding: 22px;
@@ -338,6 +350,7 @@
 .news .news-more a {
   color: #15851A;
   text-decoration: none;
+  font-weight: bold;
 }
 .news .news-more .fas {
   padding-top: 19px;
@@ -353,13 +366,13 @@
   color: #ffffff;
   height: 226px;
   line-height: 22px;
+  margin-bottom: 100px;
 }
 .contact .contact-bgc {
-  left: 0px;
-  bottom: 0;
-  background-color: #0a910e;
-  top: 0;
+  width: 100%;
+  height: 100%;
   right: 0;
+  background-color: #007b04;
   position: absolute;
   opacity: 0.8;
 }
@@ -367,18 +380,46 @@
   padding-top: 46px;
   line-height: 10px;
 }
+.contact .contact-bgc .contact-top h3 {
+  font-size: 22px;
+  padding-bottom: 8px;
+}
+.contact .contact-bgc .contact-top p {
+  font-size: 14px;
+}
 .contact .contact-bgc .contact-bottom .submit {
   color: #ED1C24;
   font-weight: bold;
+  margin-left: 44px;
+  padding-left: 0px;
+}
+.contact .contact-bgc .contact-bottom .name {
+  margin-right: 44px;
 }
 .contact .contact-bgc .contact-bottom input {
+  border-radius: 3px;
   border: none;
   outline-style: none;
-  background-color: #EDF1FA;
-  padding-left: 10px;
-  color: #000;
+  background-color: #fff;
+  padding-left: 20px;
+  color: #000000;
   height: 45px;
   width: 241px;
+}
+
+.feedback {
+  background-image: url("../img/bg-feedback.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feedback .title h3 {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 700;
+  padding-left: 100px;
+}
+.feedback .feedback-desc {
+  padding-bottom: 200px;
 }
 
 /*# sourceMappingURL=main.css.map */

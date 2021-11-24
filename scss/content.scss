@@ -10,6 +10,7 @@
 .content{
     padding-bottom: 52px;
     text-align: center;
+    margin-bottom: 49px;
     .content-item{
         position: relative;
         img{
@@ -47,14 +48,18 @@
         width: 179px;
         height: 44px;
         background-color: #329736;
-        padding-top: 10px;
-        // display: inline;
+        padding: 10px 0px;
+        padding-left: 20px;
+        display: inline;
 
         a{
             color: #FFF;
             text-decoration: none;
             .fas{
-                padding-left: 30px;
+                margin-top: -11px;
+                margin-left: 20px;
+                padding: 12px 20px;
+                background-color: #137C37;
             }
         }
     }
