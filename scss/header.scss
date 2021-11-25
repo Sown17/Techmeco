@@ -79,15 +79,10 @@
     margin-top: 39px;
     align-items: center;
     background-color: #137C37;
-    padding-top: 17px;
     border: 8px #D6D6D6 solid;
     border-radius: 3px;
     position: relative;
     transition: all 0.3s ease-in;
-    li{
-        float: left;
-        list-style: none;
-    }
     a{
         color: #fff;
         padding: 0rem 2rem;
@@ -119,6 +114,7 @@
     text-align: center;
     line-height: 1em;
     vertical-align: middle;
+    padding: 17px 0;
 }
   
 .nav-link {
@@ -130,7 +126,6 @@
     border-bottom: 3px solid #ED1C24;
     content: "";
     display: block;
-    margin: 0.25em auto 0;
     transition: width 250ms ease-in-out 0s;
     width: 0;
 }
@@ -140,13 +135,12 @@
     width: 100%;
 }
 .sticky{
-    position: fixed;
-    display: flex;
-    z-index: 100;
-    width: 100%;
-    left:0px;
     top: 0px;
-    margin-top: 0px;
+    margin-top: -39px;
+    position: fixed;
+    z-index: 100;
+    left:0px;
+    right: 0px;
     transition: all 0.5s ease;
     a{
         margin-left: 23px;
@@ -157,7 +151,7 @@
         width: 93px;
         height: 3px;
         background-color: #ED1C24;
-        left: 60px;
+        left: 52px;
         border-radius: 3px;
         max-width: 94px;
     }

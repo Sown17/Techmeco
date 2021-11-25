@@ -79,15 +79,10 @@
   margin-top: 39px;
   align-items: center;
   background-color: #137C37;
-  padding-top: 17px;
   border: 8px #D6D6D6 solid;
   border-radius: 3px;
   position: relative;
   transition: all 0.3s ease-in;
-}
-.nav li {
-  float: left;
-  list-style: none;
 }
 .nav a {
   color: #fff;
@@ -116,6 +111,7 @@
   text-align: center;
   line-height: 1em;
   vertical-align: middle;
+  padding: 17px 0;
 }
 
 .nav-link {
@@ -128,7 +124,6 @@
   border-bottom: 3px solid #ED1C24;
   content: "";
   display: block;
-  margin: 0.25em auto 0;
   transition: width 250ms ease-in-out 0s;
   width: 0;
 }
@@ -140,13 +135,12 @@
 }
 
 .sticky {
-  position: fixed;
-  display: flex;
-  z-index: 100;
-  width: 100%;
-  left: 0px;
   top: 0px;
-  margin-top: 0px;
+  margin-top: -39px;
+  position: fixed;
+  z-index: 100;
+  left: 0px;
+  right: 0px;
   transition: all 0.5s ease;
 }
 .sticky a {
@@ -158,7 +152,7 @@
   width: 93px;
   height: 3px;
   background-color: #ED1C24;
-  left: 60px;
+  left: 52px;
   border-radius: 3px;
   max-width: 94px;
 }
@@ -404,41 +398,48 @@
   position: relative;
   background-image: url("../img/bg-contact.png");
   background-repeat: no-repeat;
-  background-position-x: 50%;
+  background-position: top center;
+  background-size: cover;
   color: #ffffff;
-  height: 226px;
   line-height: 22px;
-  margin-bottom: 100px;
+  padding: 50px 0;
 }
-.contact .contact-bgc {
-  width: 100%;
-  height: 100%;
-  right: 0;
+.contact::before {
+  content: "";
   background-color: #007b04;
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
   opacity: 0.8;
 }
-.contact .contact-bgc .contact-top {
-  padding-top: 46px;
+.contact .contact-top {
   line-height: 10px;
+  position: relative;
 }
-.contact .contact-bgc .contact-top h3 {
+.contact .contact-top h3 {
   font-size: 22px;
   padding-bottom: 8px;
 }
-.contact .contact-bgc .contact-top p {
+.contact .contact-top p {
   font-size: 14px;
 }
-.contact .contact-bgc .contact-bottom .submit {
+.contact .contact-bottom {
+  padding-top: 46px;
+  position: relative;
+}
+.contact .contact-bottom .submit {
   color: #ED1C24;
   font-weight: bold;
   margin-left: 44px;
   padding-left: 0px;
 }
-.contact .contact-bgc .contact-bottom .name {
+.contact .contact-bottom .name {
   margin-right: 44px;
 }
-.contact .contact-bgc .contact-bottom input {
+.contact .contact-bottom input {
   border-radius: 3px;
   border: none;
   outline-style: none;
@@ -450,18 +451,169 @@
 }
 
 .feedback {
+  position: relative;
+  padding: 50px 0px;
   background-image: url("../img/bg-feedback.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
+  background-position-x: 50%;
 }
-.feedback .title h3 {
-  color: #000000;
+.feedback h3 {
   font-size: 22px;
-  font-weight: 700;
+  color: #000;
+  font-weight: bold;
   padding-left: 100px;
 }
+.feedback .feedback-slick {
+  margin-left: 20px;
+  width: 580px;
+  padding-bottom: 59px;
+}
+.feedback .feedback-slick .chevron-prev {
+  position: absolute;
+  top: 330px;
+  left: 280px;
+  border: none;
+  color: #ffffff;
+  background-color: #65656580;
+  border-radius: 50%;
+  padding: 10px 18px;
+}
+.feedback .feedback-slick .chevron-next {
+  position: absolute;
+  top: 330px;
+  left: 222px;
+  border: none;
+  color: #ffffff;
+  background-color: #65656580;
+  border-radius: 50%;
+  padding: 10px 18px;
+}
 .feedback .feedback-desc {
-  padding-bottom: 200px;
+  background-color: #fff;
+  padding: 30px 52px 60px 52px;
+  margin-top: 27px;
+  border: 1px solid #000;
+}
+.feedback .feedback-desc span {
+  padding-left: 40px;
+}
+.feedback .feedback-desc img {
+  padding-left: 59px;
+  float: left;
+  padding-bottom: 22px;
+}
+.feedback .feedback-desc h5 {
+  padding-top: 15px;
+  font-size: 24px;
+  color: #000;
+  padding-left: 180px;
+  margin-bottom: 0px;
+}
+.feedback .feedback-desc p {
+  clear: left;
+}
+
+.partner {
+  text-align: center;
+  padding-bottom: 66px;
+}
+.partner h3 {
+  color: #000;
+  font-size: 22px;
+}
+.partner .partner-logo {
+  padding: 20px;
+  align-items: center;
+  width: 172px;
+  height: 122px;
+  border: 1px solid #949494;
+}
+.partner .partner-logo img {
+  width: 100%;
+}
+.partner .chevron-prev {
+  position: absolute;
+  top: 32px;
+  right: -67px;
+  border: none;
+  color: #ffffff;
+  background-color: #65656580;
+  border-radius: 50%;
+  padding: 10px 18px;
+}
+.partner .chevron-next {
+  position: absolute;
+  top: 32px;
+  left: -67px;
+  border: none;
+  color: #ffffff;
+  background-color: #65656580;
+  border-radius: 50%;
+  padding: 10px 18px;
+}
+
+.footer {
+  padding-bottom: 50px;
+  background-color: #F6F6F6;
+}
+.footer .footer-logo {
+  padding: 25px 0px;
+}
+.footer .footer-title {
+  font-size: 16px;
+}
+.footer .footer-title p {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+.footer .footer-title li {
+  list-style-type: square;
+  color: #ED1C24;
+}
+.footer .footer-title li a {
+  color: #000;
+}
+.footer .footer-title li a:hover {
+  text-decoration: none;
+  color: #ED1C24;
+}
+.footer .footer-icon {
+  margin-top: 20px;
+}
+.footer .footer-icon a {
+  margin-right: 15px;
+  border: 1px solid #329736;
+  border-radius: 50%;
+  padding: 8px 10px 10px 10px;
+}
+.footer .footer-icon a img {
+  align-items: center;
+  width: 19px;
+  height: 19px;
+}
+.footer .footer-icon a:hover {
+  margin-right: 17px;
+  border: 1px solid #1a591c;
+  border-radius: 50%;
+  padding: 10px 12px 12px 12px;
+}
+.footer .footer-icon a:hover img {
+  transition: all 0.05 ease;
+  transform: rotate(20deg);
+}
+
+.copyright {
+  background-color: #DCDCDC;
+  font-size: 16px;
+  height: 70px;
+  line-height: 70px;
+  color: #656565;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
