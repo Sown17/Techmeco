@@ -22,13 +22,40 @@
             padding-left: 10px;
             text-align: start;
             position: absolute;
-            top: 125px;
+            top: 126px;
             width: 100%;
             line-height: 58px;
             height: 58px;
             background-color:#2B282880;
             cursor: pointer;
             color: rgb(255, 255, 255);
+            &:hover{
+                a{
+                    color: #fff;
+                }
+            }
+            &::before {  
+                transform: scaleX(0);
+                transform-origin: bottom right;
+            }
+            
+            &:hover::before {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+                  
+            &::before {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 0; right: 0; bottom: 0; left: 0;
+                inset: 0 0 0 0;
+                background: #137c37;
+                opacity: 0.5;
+                color: #000;
+                z-index: 0;
+                transition: transform .5s ease;
+            }
             .fab{
                 top: 8px;
                 right: 10px;
@@ -39,6 +66,9 @@
                 border-radius: 50%;
                 font-size: 20px;
                 padding: 10px 10px;
+            }
+            a{
+                color: #fff;
             }
         }
     }
@@ -51,7 +81,6 @@
         padding: 10px 0px;
         padding-left: 20px;
         display: inline;
-
         a{
             color: #FFF;
             text-decoration: none;

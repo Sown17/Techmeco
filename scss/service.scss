@@ -159,9 +159,10 @@
         padding-left: 100px;
     }
     .feedback-slick{
+        padding-bottom: 59px;
         margin-left: 20px;
         width: 580px;
-        padding-bottom: 59px;
+        // box-shadow: 1px -59px 5px 1px rgba(0, 0, 255, .2);
         .chevron-prev{
             position: absolute;
             top: 330px;
@@ -187,8 +188,7 @@
         background-color: #fff;
         padding: 30px 52px 60px 52px;
         margin-top: 27px;
-        // box-shadow: 1px 1px 40px 1px;
-        border: 1px solid #000;
+        
         span{
             padding-left: 40px;
         }

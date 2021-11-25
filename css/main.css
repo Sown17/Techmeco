@@ -188,13 +188,39 @@
   padding-left: 10px;
   text-align: start;
   position: absolute;
-  top: 125px;
+  top: 126px;
   width: 100%;
   line-height: 58px;
   height: 58px;
   background-color: #2B282880;
   cursor: pointer;
   color: white;
+}
+.content .content-item .content-desc:hover a {
+  color: #fff;
+}
+.content .content-item .content-desc::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+.content .content-item .content-desc:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.content .content-item .content-desc::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #137c37;
+  opacity: 0.5;
+  color: #000;
+  z-index: 0;
+  transition: transform 0.5s ease;
 }
 .content .content-item .content-desc .fab {
   top: 8px;
@@ -206,6 +232,9 @@
   border-radius: 50%;
   font-size: 20px;
   padding: 10px 10px;
+}
+.content .content-item .content-desc a {
+  color: #fff;
 }
 .content .content-more {
   cursor: pointer;
@@ -466,9 +495,9 @@
   padding-left: 100px;
 }
 .feedback .feedback-slick {
+  padding-bottom: 59px;
   margin-left: 20px;
   width: 580px;
-  padding-bottom: 59px;
 }
 .feedback .feedback-slick .chevron-prev {
   position: absolute;
@@ -494,7 +523,6 @@
   background-color: #fff;
   padding: 30px 52px 60px 52px;
   margin-top: 27px;
-  border: 1px solid #000;
 }
 .feedback .feedback-desc span {
   padding-left: 40px;
