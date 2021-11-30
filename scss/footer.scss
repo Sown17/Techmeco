@@ -49,6 +49,23 @@
             }
         }
     }
+    @include maxWidth(1024){
+        .footer-title{
+            ul{
+                margin-left: 0px;
+            }
+        }
+    }
+    @include maxWidth(576px){
+       .footer-title{
+            p{
+                padding-left: 0px;
+            }
+       }
+        ul {
+            padding-left: 20px;
+        }
+    }
 }
 .copyright{
     background-color: #DCDCDC;
@@ -57,4 +74,10 @@
     line-height: 70px;
     color: #656565;
     text-align: center;
+    @include maxWidth(576px){
+        height: 140px;
+        p{
+            padding-top: 0px;
+        }
+    }
 }

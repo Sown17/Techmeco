@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
 </head>
 <body>
     <div class="header">
@@ -38,7 +39,7 @@
                     <p>+(84) 123 456 789</p>
                 </div>
             </div>
-            <nav>
+            <nav class="nav-bar">
                 <ul class="nav">
                     <li class="nav-list"><a class="nav-link active"  href="">TRANG CHỦ</a></li>
                     <li class="nav-list"><a class="nav-link" href="">GIỚI THIỆU</a></li>
@@ -49,6 +50,11 @@
                     <li class="nav-list"><a class="nav-link" href="">TUYỂN DỤNG</a></li>
                     <li class="nav-list"><a class="nav-link" href="">LIÊN HỆ</a></li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"><i class="fas fa-bars"></i></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
             <div class="slick-banner">
                 <div class="slider">
@@ -66,50 +72,50 @@
             </div>
         </div>
     </div>
-    <div class="content">
+    <div class="product">
        <div class="container">
             <div class="title">
                 <h3>DANH MỤC SẢN PHẨM</h3>
             </div>
             <div class="row">
-                <div class="col-sm-3">
-                    <div class="content-item">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="product-item">
                         <img src="./img/item1.png" alt="">
-                        <div class="content-desc">
-                            <a href="">
+                        <div class="product-desc">
+                            <a href="#">
                                 <span>AIR PURIFICATION</span>
                                 <i class="fab fa-delicious"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="content-item">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="product-item">
                         <img src="./img/item2.png" alt="">
-                        <div class="content-desc">
-                            <a href="">
+                        <div class="product-desc">
+                            <a href="#">
                                 <span>BEAMS</span>
                                 <i class="fab fa-delicious"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="content-item">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="product-item">
                         <img src="./img/item3.png" alt="">
-                        <div class="content-desc">
-                            <a href="">
+                        <div class="product-desc">
+                            <a href="#">
                                 <span>CONTROLS</span>
                                 <i class="fab fa-delicious"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="content-item">
+                <div class="col-lg-3 d-md-none col-md-4  col-6">
+                    <div class="product-item">
                         <img src="./img/item4.png" alt="">
-                        <div class="content-desc">
-                            <a href="">
+                        <div class="product-desc">
+                            <a href="#">
                                 <span>CRITICAL ENVIRONMENTS</span>
                                 <i class="fab fa-delicious"></i>
                             </a>
@@ -118,44 +124,44 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="content-item">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="product-item">
                         <img src="./img/item5.png" alt="">
-                        <div class="content-desc">
-                            <a href="">
+                        <div class="product-desc">
+                            <a href="#">
                                 <span>DAMPERS</span>
                                 <i class="fab fa-delicious"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="content-item">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="product-item">
                         <img src="./img/item6.png" alt="">
-                        <div class="content-desc">
-                            <a href="">
+                        <div class="product-desc">
+                            <a href="#">
                                 <span>DIFFUSERS</span>
                                 <i class="fab fa-delicious"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="content-item">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="product-item">
                         <img src="./img/item7.png" alt="">
-                        <div class="content-desc">
-                            <a href="">
+                        <div class="product-desc">
+                            <a href="#">
                                 <span>DISPLACEMENT</span>
                                 <i class="fab fa-delicious"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="content-item">
+                <div class="col-lg-3 d-md-none col-md-4 col-6">
+                    <div class="product-item">
                         <img src="./img/item8.png" alt="">
-                        <div class="content-desc">
-                            <a href="">
+                        <div class="product-desc">
+                            <a href="#">
                                 <span>FAN & BLOWER COILS</span>
                                 <i class="fab fa-delicious"></i>
                             </a>
@@ -164,44 +170,44 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="content-item">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="product-item">
                         <img src="./img/item9.png" alt="">
-                        <div class="content-desc">
-                            <a href="">
+                        <div class="product-desc">
+                            <a href="#">
                                 <span>GRILLES</span>
                                 <i class="fab fa-delicious"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="content-item">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="product-item">
                         <img src="./img/item10.png" alt="">
-                        <div class="content-desc">
-                            <a href="">
+                        <div class="product-desc">
+                            <a href="#">
                                 <span>LOUVERS</span>
                                 <i class="fab fa-delicious"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="content-item">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="product-item">
                         <img src="./img/item11.png" alt="">
-                        <div class="content-desc">
-                            <a href="">
+                        <div class="product-desc">
+                            <a href="#">
                                 <span>NOISE CONTROL</span>
                                 <i class="fab fa-delicious"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="content-item">
+                <div class="col-lg-3 d-md-none col-md-4 col-6">
+                    <div class="product-item">
                         <img src="./img/item12.png" alt="">
-                        <div class="content-desc">
-                            <a href="">
+                        <div class="product-desc">
+                            <a href="#">
                                 <span>TERMINAL UNITS</span>
                                 <i class="fab fa-delicious"></i>
                             </a>
@@ -210,22 +216,22 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="content-item">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="product-item">
                         <img src="./img/item13.png" alt="">
-                        <div class="content-desc">
-                            <a href="">
+                        <div class="product-desc">
+                            <a href="#">
                                 <span>UNDERFLOOR</span>
                                 <i class="fab fa-delicious"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="content-item">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="product-item">
                         <img src="./img/item1.png" alt="">
-                        <div class="content-desc">
-                            <a href="">
+                        <div class="product-desc">
+                            <a href="#">
                                 <span>VAV DIFFUSERS</span>
                                 <i class="fab fa-delicious"></i>
                             </a>
@@ -233,7 +239,7 @@
                     </div>
                 </div>
             </div>
-            <div class="content-more">
+            <div class="product-more">
                 <a href="#">Xem chi tiết <i class="fas fa-chevron-right"></i></a>
             </div>
        </div>
@@ -282,24 +288,30 @@
             <div class="title">
                 <h3>DANH MỤC SẢN PHẨM</h3>
             </div>
-            <div class="service-item">
+            <div class="service-item" >
                 <div class="row">
-                    <div class="col-lg-4">
-                        <img src="./img/service-1.png" alt="">
+                    <div class="col-lg-4 col-md-4">
+                        <img data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" src="./img/service-1.png" alt="">
                         <div class="service-decs">
                             <h4>TƯ VẤN KỸ THUẬT</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <img src="./img/service-2.png" alt="">
+                    <div class="col-lg-4 col-md-4">
+                        <img data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" src="./img/service-2.png" alt="">
                         <div class="service-decs">
                             <h4>TƯ VẤN KỸ THUẬT</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <img src="./img/service-3.png" alt="">
+                    <div class="col-lg-4 col-md-4">
+                        <img data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" src="./img/service-3.png" alt="">
                         <div class="service-decs">
                             <h4>TƯ VẤN KỸ THUẬT</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
@@ -316,19 +328,19 @@
             </div>
             <div class="project-item">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                         <img src="./img/project-1.png" alt="">
                         <div class="project-desc">
                             <p>Lorem ipsum dolor sit amet</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                         <img src="./img/project-2.png" alt="">
                         <div class="project-desc">
                             <p>Lorem ipsum dolor sit amet</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                         <img src="./img/project-3.png" alt="">
                         <div class="project-desc">
                             <p>Lorem ipsum dolor sit amet</p>
@@ -336,19 +348,19 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                         <img src="./img/project-4.png" alt="">
                         <div class="project-desc">
                             <p>Lorem ipsum dolor sit amet</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                         <img src="./img/project-1.png" alt="">
                         <div class="project-desc">
                             <p>Lorem ipsum dolor sit amet</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4">
                         <img src="./img/project-2.png" alt="">
                         <div class="project-desc">
                             <p>Lorem ipsum dolor sit amet</p>
@@ -368,36 +380,36 @@
             </div>
             <div class="news-item">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <img src="./img/new1.png" alt="">
                         <span>We have instilled a profound service culture in our company from top to bottom</span>
                         <p> TIN TỨC CHUYÊN NGÀNH</p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <img src="./img/new2.png" alt="">
                         <span>We have instilled a profound service culture in our company from top to bottom</span>
                         <p> TIN TỨC CHUYÊN NGÀNH</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <img src="./img/new1.png" alt="">
                         <span>We have instilled a profound service culture in our company from top to bottom</span>
                         <p> TIN TỨC CHUYÊN NGÀNH</p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <img src="./img/new2.png" alt="">
                         <span>We have instilled a profound service culture in our company from top to bottom</span>
                         <p> TIN TỨC CHUYÊN NGÀNH</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <img src="./img/new1.png" alt="">
                         <span>We have instilled a profound service culture in our company from top to bottom</span>
                         <p> TIN TỨC CHUYÊN NGÀNH</p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <img src="./img/new2.png" alt="">
                         <span>We have instilled a profound service culture in our company from top to bottom</span>
                         <p> TIN TỨC CHUYÊN NGÀNH</p>
@@ -470,42 +482,42 @@
                 </h3>
             </div>
             <div class="row partner-slick">
-                    <div class="col-lg-2 partner-item" >
+                    <div class="col-lg-2 col-md-3 col-sm-4 partner-item" >
                        <div class="partner-logo">
                            <img src="./img/pn-1.png" alt="">
                        </div>
                     </div>
-                    <div class="col-lg-2 partner-item">
+                    <div class="col-lg-2 col-md-3 col-sm-4 partner-item">
                         <div class="partner-logo">
                             <img src="./img/pn-2.png" alt="">
                             </div>
                         </div>
-                    <div class="col-lg-2 partner-item">
+                    <div class="col-lg-2 col-md-3 col-sm-4 partner-item">
                         <div class="partner-logo">
                             <img src="./img/pn3.png" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-2 partner-item">
-                        <div class="partner-logo">
-                            <img src="./img/pn4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 partner-item">
+                    <div class="col-lg-2 col-md-3 col-sm-4 partner-item">
                         <div class="partner-logo">
                             <img src="./img/pn5.png" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-2 partner-item">
+                    <div class="col-lg-2 col-md-3 col-sm-4 partner-item">
+                        <div class="partner-logo">
+                            <img src="./img/pn5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 partner-item">
                         <div class="partner-logo">
                             <img src="./img/pn6.png" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-2 partner-item">
+                    <div class="col-lg-2 col-md-3 col-sm-4 partner-item">
                         <div class="partner-logo">
                             <img src="./img/pn3.png" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-2 partner-item">
+                    <div class="col-lg-2 col-md-3 col-sm-4 partner-item">
                         <div class="partner-logo">
                             <img src="./img/pn-2.png" alt="">
                         </div>
@@ -516,9 +528,9 @@
     <div class="footer">
        <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
                 <div class="footer-logo">
-                    <img src="./img/footer-logo.png" alt="">
+                    <a href="#"><img src="./img/footer-logo.png" alt=""></a>
                 </div>
                 <h6 style="font-weight: 700;"> 
                     CÔNG TY CỔ PHẦN THƯƠNG MẠI KỸ THUẬT TECHMECO
@@ -529,43 +541,43 @@
                     <p>Email: techmeco@info.com​</p>
                 </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-6">
                 <div class="footer-title">
                     <p>THÔNG TIN</p>
                     <ul>
-                        <li><a href="">Giới thiệu</a></li>
-                        <li><a href="">Liên hệ</a></li>
-                        <li><a href="">Đối tác</a></li>
-                        <li><a href="">Tuyển dụng</a></li>
-                        <li><a href="">Tin tức </a></li>
-                        <li><a href="">Dịch vụ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#">Đối tác</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Tin tức </a></li>
+                        <li><a href="#">Dịch vụ</a></li>
                     </ul>
                 </div>
                 <div>
                     <p></p>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="footer-title">
                     <p>SẢN PHẨM</p>
                     <ul>
-                        <li><a href="">QUẠT HƯỚNG TRỤC FFRRARI</a></li>
-                        <li><a href="">QUẠT LY TÂM FARRI</a></li>
-                        <li><a href="">QUẠT FERRARI</a></li>
-                        <li><a href="">Sản phẩm nổi bật</a></li>
-                        <li><a href="">sản phẩm bán chạy</a></li>
-                        <li><a href="">sản phẩm khuyến mãi</a></li>
+                        <li><a href="#">QUẠT HƯỚNG TRỤC FFRRARI</a></li>
+                        <li><a href="#">QUẠT LY TÂM FARRI</a></li>
+                        <li><a href="#">QUẠT FERRARI</a></li>
+                        <li><a href="#">Sản phẩm nổi bật</a></li>
+                        <li><a href="#">sản phẩm bán chạy</a></li>
+                        <li><a href="#">sản phẩm khuyến mãi</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="footer-title"><p>FANPAGE</p></div>
                 <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="" data-width="243" data-height="160" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Meta</a></blockquote></div>
                 <div class="footer-icon">
-                   <a href=""><img src="./img/youtube 1.png" alt=""></a>
-                   <a href=""><img src="./img/tiktok-logo-B9AC5FE794-seeklogo 1.png" alt=""></a>
-                   <a href=""><img src="./img/unnamed 1.png" alt=""></a>
-                   <a href=""><img src="./img/unnamed 1.png" alt=""></a>
+                   <a href="#"><img src="./img/youtube 1.png" alt=""></a>
+                   <a href="#"><img src="./img/tiktok-logo-B9AC5FE794-seeklogo 1.png" alt=""></a>
+                   <a href="#"><img src="./img/unnamed 1.png" alt=""></a>
+                   <a href="#"><img src="./img/unnamed 1.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -578,9 +590,10 @@
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0" nonce="uDQRP8Wc"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0" nonce="uDQRP8Wc"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/scroll-nav.js"></script>
     <script src="./js/slider.js"></script>
 

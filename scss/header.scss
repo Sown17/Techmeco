@@ -4,9 +4,15 @@
     background-image: url('../img/bg-haeder.png');
     background-repeat: no-repeat;
     background-position-x: 50%;
-    height: 594px;
     img{
         width: 100%;
+    }
+    .hamburger{
+        .bar{
+            .fas{
+                display: none;
+            }
+        }
     }
 }
 .top{
@@ -74,6 +80,7 @@
             font-weight: bold;
         }
     }
+    
 }
 .nav{
     margin-top: 39px;
@@ -159,4 +166,93 @@
 }
 .slider{
     padding-top: 25px;
+}
+@include maxWidth(1024px){
+    .header{
+        position: relative;
+        .top{
+            .logo{
+                padding-left: 0px;
+            }
+        }
+        .seach{
+            margin-right: 110px;
+            .seach-btn{
+                width: 400px;
+                
+            }
+            .seach-right{
+                right: 110px;
+                width: 43px;
+                span {
+                    display: none;
+                }
+            }
+        }
+        .phone-contact{
+            display: none;
+        }
+        .nav{
+            margin-top: 0px;
+            padding-right: 200px;
+            position: fixed;
+            left: -100%;
+            top: 5rem;
+            background-color: rgb(26, 90, 42);
+            width: 50%;
+            border-radius: 10px;
+            opacity: 1;
+            z-index: 10;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+        }
+        .nav.active {
+            left: 0;
+        }
+        .nav-list {
+            text-align: start;
+            margin: .5rem 0;
+        }
+        .hamburger {
+            right: 20px;
+            position: absolute;
+            z-index: 100;
+            display: block;
+            cursor: pointer;
+            color: #000;
+            top: 30px;
+            .bar{
+                .fas {
+                    color: #137C37;
+                    font-size: 40px;
+                    display: block;
+                }
+            }
+        }
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    }
+}
+@include maxWidth(576px){
+    .header{
+        padding-bottom: 40px;
+        .seach{
+            display: none;
+        }
+        .nav{
+            padding-right: 180px;
+            width: 100%;
+            .active::after{
+                left: 33px;
+            }
+        }
+    }
 }
